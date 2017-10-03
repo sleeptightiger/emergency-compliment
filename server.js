@@ -45,7 +45,7 @@ app.get('/:name', function(req, res) {
 });
 
 app.post('/', function(req, res) {
-    //console.log(req.body.compliment);
+    //console.log(req);
     compliments.push(req.body.compliment);
     res.redirect('/');
 });
